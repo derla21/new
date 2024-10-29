@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recover Account</title>
+    <link rel="stylesheet" href="css.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Recover Your Account</h1>
+    <form method="post" action="">
+        <label for="username">Enter your username or email:</label>
+        <input type="text" id="username" name="username" required>
+        <input type="submit" value="Send Recovery Link">
+    </form>
+
+    <div id="message"></div> <!-- For displaying messages -->
+</div>
+
+<script>
+    // Simulating a form submission
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent actual form submission
+        
+        const username = document.getElementById('username').value;
+        const messageDiv = document.getElementById('message');
+
+        // Simulate sending recovery link
+        if (username) {
+            messageDiv.innerHTML = `<p>Recovery link has been sent to ${username}. Please check your email!</p>`;
+            messageDiv.style.color = 'green';
+        } else {
+            messageDiv.innerHTML = '<p>Please enter a valid username or email.</p>';
+            messageDiv.style.color = 'red';
+        }
+    });
+</script>
+
+</body>
+</html>
+    
