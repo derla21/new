@@ -262,7 +262,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-3">
                         <div class="date">
-                            <h3>08 Sep 2019</h3>
+                            <h3>March 1-5, 2024</h3>
                         </div>
                     </div>
                     <div class="col-xl-9 col-lg-9">
